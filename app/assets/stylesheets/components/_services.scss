@@ -1,0 +1,44 @@
+.services_all {
+  margin-top: 50px;
+}
+#services_headline {
+  font-size: 32px;
+  font-weight: bold;
+}
+.service_1 {
+  background-color: #FFCD78;
+}
+.service_2 {
+  background-color: #FFF4DF;
+}
+.service_3 {
+  background-color: #FEE0AF;
+}
+.strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 80px;
+    }
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: #6E6E6E;
+    }
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
