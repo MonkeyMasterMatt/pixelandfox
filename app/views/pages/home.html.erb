@@ -12,12 +12,12 @@
   </div>
 </div>
 
-<div class="wrapper">
-  <div class="container text-center">
-    <div class="strike">
+<div class="wrapper container">
+  <div class="text-center">
+    <div class="strike container">
         <span id="services_headline", style="font-family: 'Avenir'">What we can do for you</span>
     </div>
-    <div class="services_all">
+    <div class="col-md-12 services_all text-center">
       <div class="service_1 col-md-4 text-center pixel-box">
         <div class="service_1_content">
           <%= image_tag "spaceship.svg"%>
@@ -52,7 +52,95 @@
     <div class="strike">
         <span id="services_headline", style="font-family: 'Avenir'">Our Approach</span>
     </div>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
+
+<div class="wrapper">
+  <div class="container text-center">
+    <div class="strike">
+        <span id="services_headline", style="font-family: 'Avenir'">The Foxes</span>
+    </div>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container text-center">
+    <div class="strike">
+        <span id="services_headline", style="font-family: 'Avenir'">Get In Touch</span>
+    </div>
+      <%= simple_form_for @user do |f| %>
+        <%= f.input :username %>
+        <%= f.input :password %>
+        <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
+
+
+<script>
+var menu = 0, movingDivObj;
+var menu2 = 0, movingDivObj2;
+var menu3 = 0, movingDivObj3;
+setInterval(function(){
+  if(menu == 0){
+    Menu_Move(20,1);
+  } else {
+    Menu_Move(-20,0);
+  };
+  if(menu2 == 0){
+    Menu_Move2(-20,1);
+  } else {
+    Menu_Move2(20,0);
+  };
+  if(menu3 == 0){
+    Menu_Move3(20,1);
+  } else {
+    Menu_Move3(-20,0);
+  };
+},1500);
+function Menu_Move(dirn,tog) {
+  var currentPosition = parseInt(movingDivObj.style.top);
+  movingDivObj.style.top = currentPosition+dirn+"px";
+  menu = tog;
+}
+window.onload= function(){
+  movingDivObj=document.querySelector(".service_1");
+  movingDivObj.style.top="20px";
+
+  movingDivObj2=document.querySelector(".service_2");
+  movingDivObj2.style.top="40px";
+
+  movingDivObj3=document.querySelector(".service_3");
+  movingDivObj3.style.top="20px";
+};
+
+function Menu_Move2(dirn,tog) {
+  var currentPosition2 = parseInt(movingDivObj2.style.top);
+  movingDivObj2.style.top = currentPosition2+dirn+"px";
+  menu2 = tog;
+}
+
+function Menu_Move3(dirn,tog) {
+  var currentPosition3 = parseInt(movingDivObj3.style.top);
+  movingDivObj3.style.top = currentPosition3+dirn+"px";
+  menu3 = tog;
+}
+
+
+</script>
+
+
 
 
