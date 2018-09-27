@@ -1,3 +1,89 @@
 .pixel-box {
   height: 300px;
 }
+#relative-box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 600px;
+  background: none;
+  margin-top: 0;
+}
+.cube {
+  height: 30%;
+  width: 30%;
+}
+.ear-left {
+  background-color: #f51e01;
+  position: absolute;
+  left: 5%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.ear-right {
+  background-color: #ff8b00;
+  position: absolute;
+  right: 5%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.left-cheek {
+  background-color: #ff7402;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+.middle-cheek {
+  background-color: #ff5d00;
+  position: absolute;
+  top: 30%;
+  right: 35%;
+}
+.nose {
+  position: absolute;
+  width: 11%;
+  height: 8%;
+  -webkit-transform: perspective(12px) rotateX(175deg);
+  transform: perspective(12px) rotateX(168deg);
+  background-color: black;
+  right: 44%;
+  bottom: 33%;
+  border-radius: 5px;
+  z-index: 1;
+}
+.right-cheek {
+  background-color: #ffb638;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+.left-jaw {
+  border-bottom: solid 90px transparent;
+  border-left: solid 90px transparent;
+  border-right: solid 90px #ffcd78;
+  border-top: solid 90px #ffcd78;
+  bottom: 10%;
+  position: absolute;
+  left: 5%;
+}
+.middle-jaw {
+  background-color: #fff4df;
+  position: absolute;
+  right: 35%;
+  bottom: 10%;
+}
+.right-jaw {
+  border-bottom: solid 90px transparent;
+  border-left: solid 90px #fee0af;
+  border-right: solid 90px transparent;
+  border-top: solid 90px #fee0af;
+  bottom: 10%;
+  position: absolute;
+  right: 5%;
+}

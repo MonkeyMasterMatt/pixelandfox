@@ -1,5 +1,8 @@
 .services_all {
   margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 #services_headline {
   font-size: 32px;
@@ -13,6 +16,22 @@
 }
 .service_3 {
   background-color: #FEE0AF;
+}
+.service_1_content,
+.service_2_content,
+.service_3_content {
+  padding-top: 50px;
+}
+.services_heading {
+  margin-top: 50px;
+}
+.service_1,
+.service_2,
+.service_3 {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .strike {
         display: block;
@@ -42,3 +61,4 @@
         left: 100%;
         margin-left: 15px;
     }
+
