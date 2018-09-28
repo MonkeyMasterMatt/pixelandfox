@@ -87,3 +87,15 @@
   position: absolute;
   right: 5%;
 }
+.question-box {
+  padding: 10px;
+  width: 435px;
+  display: flex;
+  align-items: center;
+  &:nth-child(odd) {
+    background-color: blue;
+  }
+  &:nth-child(even) {
+    background-color: green;
+  }
+}

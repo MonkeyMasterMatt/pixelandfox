@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<div class="wrapper container">
+<div class="wrapper container", id="services">
   <div class="text-center">
     <div class="strike container">
         <span id="services_headline", style="font-family: 'Avenir'">What we can do for you</span>
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper", id="approach">
   <div class="container text-center">
     <div class="strike">
         <span id="services_headline", style="font-family: 'Avenir'">Our Approach</span>
@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper", id="about_us">
   <div class="container text-center">
     <div class="strike">
         <span id="services_headline", style="font-family: 'Avenir'">The Foxes</span>
@@ -75,8 +75,37 @@
   </div>
 </div>
 
+<div class="container" id="user-email">
+<!--   <div class="question-box">
+    <p>I need to spice up my communications strategy!</p>
+  </div>
+    <div class="question-box">
+    <p>The content of my messaging is just not right anymore</p>
+  </div>
+  <div class="question-box">
+    <p>XXXX</p>
+  </div> -->
+  <%= simple_form_for @user do |f| %>
+    <%= f.input :email %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
+
+
+
 
 <script>
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 var menu = 0, movingDivObj;
 var menu2 = 0, movingDivObj2;
 var menu3 = 0, movingDivObj3;
