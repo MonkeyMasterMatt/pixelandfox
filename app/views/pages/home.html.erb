@@ -1,4 +1,4 @@
-<div class="wrapper-black banner">
+<div class="wrapper-black banner" style="background-image: url('<%= image_path'forest.jpg' %>');">
   <div id="relative-box">
     <div class="ear-left cube"></div>
     <div class="ear-right cube"></div>
@@ -9,37 +9,40 @@
     <div class="left-jaw"></div>
     <div class="middle-jaw cube"></div>
     <div class="right-jaw"></div>
+<!--     <h1 class="banner_headline" style="font-family : 'Avenir Black'">pixel+fox</h1> -->
   </div>
 </div>
 
-<div class="wrapper container", id="services">
-  <div class="text-center">
-    <div class="strike container">
-        <span id="services_headline", style="font-family: 'Avenir'">What we can do for you</span>
-    </div>
-    <div class="col-md-12 services_all text-center">
-      <div class="service_1 col-md-4 text-center pixel-box">
-        <div class="service_1_content">
-          <%= image_tag "spaceship.svg"%>
-          <h4 class="services_heading", style="font-family: 'Avenir'">Website Design</h4>
-          <p> - User Interface Design - User Experience - Interaction Design - Usability Testing </p>
-        </div>
+<div class="wrapper">
+  <div class="container", id="services">
+    <div class="text-center">
+      <div class="strike container">
+          <span id="services_headline", style="font-family: 'Avenir'; color: white;">We cut to the chase</span>
       </div>
-      <div class="service_2 col-md-4 text-center pixel-box">
-        <div>
-          <div class="service_2_content">
-            <%= image_tag "spaceship.svg"%>
-            <h4 class="services_heading", style="font-family: 'Avenir'">Public Relations</h4>
-            <p> - Media training - Communications strategy and planning - Media outreach - Interviews - Storytelling</p>
+      <div class="col-md-12 services_all text-center">
+        <div class="service_1 col-md-4 text-center pixel-box">
+          <div class="service_1_content">
+            <h4 class="services_heading", style="font-family: 'Avenir'"> Design</h4>
+            <br>
+            <strong>We</strong> <span class="strikethrough">are digital creatives who </span> <span class="strikethrough">provide smart services and </span> <strong>create </strong><span class="strikethrough"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="strikethrough"> in today's industry 4.0.</span>
           </div>
         </div>
-      </div>
-      <div class="service_3 col-md-4 text-center pixel-box">
-        <div>
-          <div class="service_3_content">
-            <%= image_tag "spaceship.svg"%>
-            <h4 class="services_heading", style="font-family: 'Avenir'">Website Development</h4>
-            <p> - Target Group Optimisation - Content </p>
+        <div class="service_2 col-md-4 text-center pixel-box">
+          <div>
+            <div class="service_2_content">
+              <h4 class="services_heading", style="font-family: 'Avenir'">Website Development</h4>
+              <br>
+              <strong>We</strong> <span class="strikethrough">are digital creatives who </span> <span class="strikethrough">provide smart services and </span> <strong>create </strong><span class="strikethrough"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="strikethrough"> in today's industry 4.0.</span>
+            </div>
+          </div>
+        </div>
+        <div class="service_3 col-md-4 text-center pixel-box">
+          <div>
+            <div class="service_3_content">
+              <h4 class="services_heading", style="font-family: 'Avenir'">Media Relations</h4>
+              <br>
+              <strong>We</strong> <span class="strikethrough">are digital creatives who </span> <span class="strikethrough">provide smart services and </span> <strong>create </strong><span class="strikethrough"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="strikethrough"> in today's industry 4.0.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -50,9 +53,9 @@
 <div class="wrapper", id="approach">
   <div class="container text-center">
     <div class="strike">
-        <span id="services_headline", style="font-family: 'Avenir'">Our Approach</span>
+        <span id="services_headline", style="font-family: 'Avenir'; color: white;">About</span>
     </div>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <p style="font-family: 'Avenir'; color: white;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -92,9 +95,34 @@
 </div>
 
 
-
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script>
+
+  ScrollReveal().reveal('.service_', { delay: 400, origin: 'bottom', distance: '50px', easing: 'ease-in' });
+  ScrollReveal().reveal('.service_', { delay: 500, origin: 'bottom', distance: '50px', easing: 'ease-in' });
+  ScrollReveal().reveal('.service_', { delay: 600, origin: 'bottom', distance: '50px', easing: 'ease-in' });
+
+  const navbarLinks = document.querySelector('.navbar-wagon-right');
+  const hamburgerMenu = document.querySelector('.dropdown-toggle');
+  //hamburgerMenu.addEventListener("mouseenter", (event) => {
+    //if(navbarLinks.dataset.clicked === 'false') {
+      //navbarLinks.classList.add('navbar-wagon-reveal');
+      //navbarLinks.dataset.clicked = 'true';
+    //} else {
+      //navbarLinks.classList.remove('navbar-wagon-reveal');
+      //navbarLinks.dataset.clicked = 'false';
+    //}
+  //})
+  hamburgerMenu.addEventListener("click", (event) => {
+    if(navbarLinks.dataset.clicked === 'false') {
+      navbarLinks.classList.add('navbar-wagon-reveal');
+      navbarLinks.dataset.clicked = 'true';
+    } else {
+      navbarLinks.classList.remove('navbar-wagon-reveal');
+      navbarLinks.dataset.clicked = 'false';
+    }
+  })
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
