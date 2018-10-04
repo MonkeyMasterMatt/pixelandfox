@@ -76,7 +76,7 @@
   display: block;
   width: 100%;
   height: 8px;
-  box-shadow: 0 1px rgba(255,255,255,0.6);
+  box-shadow: 0 1px rgba(0,0,0,0.6);
   margin-top: -0.7em;
   background: black;
   transform-origin: center left;
@@ -102,10 +102,10 @@
 /* Keyframes for initial animation */
 
 @keyframes strikethrough {
-  from {
+  0% {
     transform: scaleX(0);
   }
-  to {
+  100% {
     transform: scaleX(1);
   }
 }
