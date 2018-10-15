@@ -9,15 +9,12 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
     <meta name="google-site-verification" content="ab7t2snKzi-1Ow-OvU2blL9Bg9E0EaJ6aykYRBrF7sE" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body>
-    <%= render 'components/navbar' %>
     <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="javscript/velocity.min.js"></script>
-<script src="script.js"></script>
   </body>
 </html>

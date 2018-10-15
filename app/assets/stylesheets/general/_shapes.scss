@@ -1,3 +1,7 @@
+span {
+  color: #484848;
+}
+
 .pixel-box {
   height: 400px;
 }
@@ -10,6 +14,7 @@
   height: 600px;
   background: none;
   margin-top: 0;
+  padding-bottom: 0;
 }
 .cube {
   height: 30%;
@@ -19,10 +24,21 @@
   background-color: #f51e01;
   position: absolute;
   left: 5%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+}
+.ear-left_text {
+  background-color: grey;
+  position: absolute;
+  left: 5%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
 }
 .ear-right {
   background-color: #ff8b00;
@@ -32,6 +48,22 @@
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.ear-right_text {
+  background-color: white;
+  padding: 50px;
+  border: 1px solid white;
+  color: #484848;
+  position: absolute;
+  right: 5%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+  text-align: center;
+  font-size: 32px;
 }
 .left-cheek {
   background-color: #ff7402;
@@ -106,3 +138,12 @@
 //   color: white;
 //   font-size: 56px;
 // }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo3 {
+  margin-top: 20px;
+}

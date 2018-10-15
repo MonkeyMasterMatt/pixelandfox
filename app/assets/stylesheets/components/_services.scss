@@ -4,9 +4,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#services_headline {
+.services_headline {
   font-size: 32px;
   font-weight: bold;
+  margin: 30px 0 20px 0;
 }
 .service_1 {
   background-color: #FFCD78;
@@ -24,6 +25,7 @@
 }
 .services_heading {
   margin-top: 50px;
+  font-size: 56px;
 }
 .service_1,
 .service_2,
@@ -38,7 +40,7 @@
         text-align: center;
         overflow: hidden;
         white-space: nowrap;
-        margin-top: 80px;
+        // margin-top: 80px;
     }
     .strike > span {
         position: relative;
@@ -68,6 +70,8 @@
   display: inline-block;
   position: relative;
   transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+  text-decoration-line: none;
+  color: #484848;
 }
 
 .strikethrough:after {
@@ -75,12 +79,12 @@
   position: absolute;
   display: block;
   width: 100%;
-  height: 8px;
+  height: 2px;
   box-shadow: 0 1px rgba(0,0,0,0.6);
   margin-top: -0.7em;
   background: black;
   transform-origin: center left;
-  animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+  animation: strikethrough 1s 0s cubic-bezier(.55, 0, .1, 1) 1;
   transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
 }
 
@@ -88,7 +92,7 @@
 /* Little hover effect */
 
 .strikethrough:hover {
-  color: rgba(200,0,0,1);
+  color: pink;
 }
 
 .strikethrough:hover:after {
@@ -109,3 +113,4 @@
     transform: scaleX(1);
   }
 }
+

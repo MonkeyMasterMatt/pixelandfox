@@ -1,5 +1,36 @@
 .banner {
   padding: 100px;
-  height: calc(100vh - 70px);
-  background-size: cover !important;
+  height: 100vh;
+  // background-size: cover !important;
+  background: #0F2027;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// text-align: center;
+}
+#banner-title {
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  margin-top: -35px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+#banner-title_sub {
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+#banner-title-box {
+
+}
+.question1 {
+  position: absolute;
+    left: -60%;
+    color: white;
+    font-size: 24px;
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    top: 20%;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    letter-spacing: 1.5px;
 }
