@@ -31,14 +31,19 @@ span {
   z-index: 1;
 }
 .ear-left_text {
-  background-color: grey;
+  background-color: white;
+  padding: 50px;
+  border: 1px solid white;
+  color: #484848;
   position: absolute;
-  left: 5%;
+  right: 5%;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   opacity: 0;
+  text-align: center;
+  font-size: 32px;
 }
 .ear-right {
   background-color: #ff8b00;
@@ -88,6 +93,18 @@ span {
   bottom: 33%;
   border-radius: 5px;
   z-index: 1;
+}
+.nose-text {
+  position: absolute;
+  width: 18%;
+  height: 10%;
+  right: 40.5%;
+  bottom: 34%;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .right-cheek {
   background-color: #ffb638;
