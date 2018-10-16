@@ -3,7 +3,7 @@
 <!--     <a class="question1" style="font-family: 'Avenir'">Want to spice up your PR?</a> -->
     <div class="ear-left cube" tabindex="0"></div>
     <div class="ear-left_text cube">
-      <h4 class="services_heading", style="font-family: 'Avenir'">Media Relations</h4>
+      <h4 class="services_heading", style="font-family: 'Avenir'">Product Design</h4>
       <br>
       <strong>We</strong> <span class="text-before-strike">are digital creatives who </span> <strong>create </strong><span class="text-before-strike"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="text-before-strike"> in today's industry 4.0.</span>
       <div class="strike">
@@ -45,17 +45,48 @@
     <div class="middle-cheek cube"></div>
     <div class="nose"></div>
     <div class="nose-text" style="color: white; font-family: 'Avenir'">
-      BOOP ME!
+      BOOP!
     </div>
+    <!-- The Modal -->
     <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="question" id="question1">
+        Want to reach the right people <br /> in the right place?
       </div>
-
+      <div class="question" id="question2">
+        Your website doesn't fit  <br /> your needs anymore?
+      </div>
+      <div class="question" id="question3">
+        Want to meet our dog?
+      </div>
+       <div class="question" id="question4">
+        Want to meet our <br /> other dog?
+      </div>
+       <div class="question" id="question5">
+        Want to spice up <br /> your design?
+      </div>
+      <div class="question" id="question6">
+        Want to spice up <br /> your design?
+      </div>
+<!--       <div class="question" id="question7">
+        Want to spice up <br /> your design?
+      </div> -->
+      <div id="user-email">
+        <%= simple_form_for @user do |f| %>
+          <%= f.input :email, label: false,
+          class: "email-input",
+            required: true,
+            placeholder: "Enter your email address..."
+            %>
+          <%= f.submit "Save",
+          class: "submit-btn"
+            %>
+        <% end %>
+      </div>
     </div>
+  </div>
     <div class="right-cheek cube"></div>
     <div class="left-jaw"></div>
     <div class="middle-jaw cube"></div>
@@ -68,21 +99,9 @@
   </div>
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="container" id="user-email">
-      <%= simple_form_for @user do |f| %>
-        <%= f.input :email %>
-        <%= f.button :submit %>
-      <% end %>
-    </div>
-  </div>
-</div>
 
 
+<!--
 
 
 <div class="wrapper">
@@ -143,7 +162,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
-
+ -->
 
 
 

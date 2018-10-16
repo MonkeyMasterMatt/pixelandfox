@@ -22,15 +22,62 @@
 #banner-title-box {
 
 }
-.question1 {
+
+.question {
   position: absolute;
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+#question1 {
     left: -60%;
-    color: white;
-    font-size: 24px;
     -ms-transform: rotate(-20deg);
     -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
-    top: 20%;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    letter-spacing: 1.5px;
+    top: -30%;
 }
+#question2 {
+    right: -60%;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    top: -30%;
+}
+#question3 {
+    right: -60%;
+    // -ms-transform: rotate(20deg);
+    // -webkit-transform: rotate(20deg);
+    // transform: rotate(20deg);
+    bottom: 25%;
+}
+#question4 {
+    right: -60%;
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    bottom: -70%;
+}
+#question5 {
+    left: -60%;
+    // -ms-transform: rotate(-20deg);
+    // -webkit-transform: rotate(-20deg);
+    // transform: rotate(-20deg);
+    bottom: 25%;
+}
+#question6 {
+    left: -60%;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    bottom: -70%;
+}
+// #question7 {
+//     // -ms-transform: rotate(20deg);
+//     // -webkit-transform: rotate(20deg);
+//     // transform: rotate(20deg);
+//     bottom: -125%;
+//     margin: auto;
+// }
+

@@ -37,6 +37,21 @@ setInterval(function(){
 // });
 // let rotated = false;
 
+$(function() {
+  // Get page title
+    var pageTitle = $("title").text();
+
+  // Change page title on blur
+  $(window).blur(function() {
+    $("title").text("boop me...");
+  });
+
+  // Change page title back on focus
+  $(window).focus(function() {
+    $("title").text(pageTitle);
+  });
+});
+
 $('.ear-left').bind('mouseenter focus',function(){
   // deg = rotated ? 0 : 90;
     if (typeof $(this).data('origwidth')=='undefined') $(this).data('origwidth',$(this).width());

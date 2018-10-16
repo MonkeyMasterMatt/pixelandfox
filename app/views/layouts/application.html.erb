@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>pixel+fox | the no bullshit agency</title>
+    <link rel="icon" href=<%= image_path "logo_pixelandfox.png" %>>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -11,7 +12,7 @@
     <meta name="google-site-verification" content="ab7t2snKzi-1Ow-OvU2blL9Bg9E0EaJ6aykYRBrF7sE" />
 
   </head>
-  <body>
+  <body scroll="no" style="overflow: hidden">
     <%= yield %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application' %>
