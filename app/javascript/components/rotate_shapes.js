@@ -58,7 +58,7 @@ $('.ear-left').bind('mouseenter focus',function(){
     if (typeof $(this).data('origheight')=='undefined') $(this).data('origheight',$(this).height());
     $(this).stop().animate({fontSize:'40px'});
     $(this).css({'z-index': '1000', 'opacity': '0'});
-      $('.ear-left_text').css({'z-index': '2', 'width': '110%', 'height': '110%', 'opacity': '1', 'top': '-5%', 'right': '-5%'})
+      $('.ear-left_text').css({ 'z-index': '2', 'opacity': '1' })
       $('.text-before-strike').addClass('strikethrough');
     setTimeout(function() {
       $('.strikethrough').css('color', 'pink')
@@ -81,7 +81,7 @@ $('.ear-right').bind('mouseenter focus click',function(){
     if (typeof $(this).data('origheight')=='undefined') $(this).data('origheight',$(this).height());
     $(this).stop().animate({fontSize:'40px'});
     $(this).css({'z-index': '1000', 'opacity': '0'});
-      $('.ear-right_text').css({'z-index': '2', 'width': '110%', 'height': '110%', 'opacity': '1', 'top': '-5%', 'right': '-5%'})
+      $('.ear-right_text').css({ 'z-index': '2', 'opacity': '1' })
       $('.text-before-strike').addClass('strikethrough');
     setTimeout(function() {
       $('.strikethrough').css('color', 'pink')

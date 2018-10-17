@@ -33,10 +33,13 @@ span {
 .ear-left_text {
   background-color: white;
   padding: 50px;
+  width: 110%;
+  height: 110%;
   border: 1px solid white;
   color: #484848;
   position: absolute;
-  right: 5%;
+  right: -5%;
+  top: -5%;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -58,10 +61,13 @@ span {
 .ear-right_text {
   background-color: white;
   padding: 50px;
+  width: 110%;
+  height: 110%;
   border: 1px solid white;
   color: #484848;
   position: absolute;
-  right: 5%;
+  right: -5%;
+  top: -5%;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -165,4 +171,80 @@ span {
 }
 .logo3 {
   margin-top: 20px;
+}
+
+// Media responsiveness
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    padding: 50px 0;
+  }
+  #relative-box {
+    width: 450px;
+    height: 450px;
+  }
+  .ear-right_text,
+  .ear-left_text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .banner {
+    padding: 100px 0;
+  }
+  #banner-title-box {
+    padding-left: 100px;
+  }
+  .cube {
+    height: 25%;
+    width: 25%;
+  }
+  .ear-right {
+    right: 10%;
+    top: 5%;
+  }
+  .ear-right_text,
+  .ear-left_text {
+    width: 110%;
+    height: 110%;
+  }
+  .ear-left {
+    left: 15%;
+    top: 5%;
+  }
+  .right-cheek {
+    right: 10%;
+  }
+  .left-cheek {
+    left: 15%;
+  }
+  .nose {
+    right: 42%;
+    bottom: 38%;
+  }
+  .nose-text {
+    right: 38.5%;
+    bottom: 39%;
+    font-size: 14px;
+  }
+  .left-jaw {
+    border-bottom: solid 75px transparent;
+    border-left: solid 75px transparent;
+    border-right: solid 75px #ffcd78;
+    border-top: solid 75px #ffcd78;
+    bottom: 20%;
+    left: 15%;
+  }
+  .middle-jaw {
+    bottom: 20%;
+  }
+  .right-jaw {
+    border-bottom: solid 75px transparent;
+    border-left: solid 75px #fee0af;
+    border-right: solid 75px transparent;
+    border-top: solid 75px #fee0af;
+    bottom: 20%;
+    right: 10%;
+  }
 }

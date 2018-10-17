@@ -1,0 +1,5 @@
+meta_product_name: "pixel + fox"
+meta_title: "pixel + fox - the no bullshit agency"
+meta_description: "pixel + fox is a digital expert in communications, product development and design. Our mission is to help people and companies succeed in the digital age."
+meta_image: "logo_pixelandfox.png"                       # should exist in `app/assets/images/`
+twitter_account: "@pixelandfox"   # required for Twitter Cards
