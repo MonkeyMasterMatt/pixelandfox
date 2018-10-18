@@ -52,7 +52,8 @@ $(function() {
   });
 });
 
-$('.ear-left').bind('mouseenter focus',function(){
+if ($(window).width() > 600) {
+  $('.ear-left').bind('mouseenter focus',function(){
   // deg = rotated ? 0 : 90;
     if (typeof $(this).data('origwidth')=='undefined') $(this).data('origwidth',$(this).width());
     if (typeof $(this).data('origheight')=='undefined') $(this).data('origheight',$(this).height());
@@ -64,7 +65,7 @@ $('.ear-left').bind('mouseenter focus',function(){
       $('.strikethrough').css('color', 'pink')
       }, 1000 );
       $('.ear-right').css('opacity', '0')
-}).bind('mouseleave blur',function(){
+  }).bind('mouseleave blur',function(){
     $(this).stop().animate({width:$(this).data('origwidth'), height:$(this).data('origheight'), fontSize:'16px'})
     $('.ear-left_text').css({'z-index': '0', 'opacity': '0'})
     $(this).css({'opacity': '1'})
@@ -73,9 +74,9 @@ $('.ear-left').bind('mouseenter focus',function(){
     $('.strikethrough').css('color', 'white')
     $('span').removeClass('strikethrough');
     rotated = !rotated;
-});
+  });
 
-$('.ear-right').bind('mouseenter focus click',function(){
+  $('.ear-right').bind('mouseenter focus click',function(){
   // deg = rotated ? 0 : 90;
     if (typeof $(this).data('origwidth')=='undefined') $(this).data('origwidth',$(this).width());
     if (typeof $(this).data('origheight')=='undefined') $(this).data('origheight',$(this).height());
@@ -87,7 +88,7 @@ $('.ear-right').bind('mouseenter focus click',function(){
       $('.strikethrough').css('color', 'pink')
       }, 1000 );
       $('.ear-left').css('opacity', '0')
-}).bind('mouseleave blur',function(){
+  }).bind('mouseleave blur',function(){
     $(this).stop().animate({width:$(this).data('origwidth'), height:$(this).data('origheight'), fontSize:'16px'})
     $('.ear-right_text').css({'z-index': '0', 'opacity': '0'})
     $(this).css({'opacity': '1'})
@@ -96,7 +97,12 @@ $('.ear-right').bind('mouseenter focus click',function(){
     $('.strikethrough').css('color', 'white')
     $('span').removeClass('strikethrough');
     rotated = !rotated;
-});
+  });
+};
+
+
+
+
 
 
 // var $element = $("#example");

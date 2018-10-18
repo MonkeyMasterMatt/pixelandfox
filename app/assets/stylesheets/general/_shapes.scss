@@ -92,7 +92,6 @@ span {
   position: absolute;
   width: 11%;
   height: 8%;
-  -webkit-transform: perspective(12px) rotateX(175deg);
   transform: perspective(12px) rotateX(168deg);
   background-color: black;
   right: 44%;
@@ -177,19 +176,52 @@ span {
 
 @media only screen and (max-width: 600px) {
   .banner {
-    padding: 50px 0;
+    padding: 115px 0 0 0;
+    text-align: center;
   }
+  #banner-title-box {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    #banner-title {
+      margin: 0 15px 0 15px;
+    }
+  }
+  .nose {
+    bottom: 34%;
+    transform: perspective(12px) rotateX(163deg);
+    width: 12%;
+  }
+
   #relative-box {
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
   }
   .ear-right_text,
   .ear-left_text {
     display: none;
   }
+  .left-jaw {
+    border-bottom: solid 45px transparent;
+    border-left: solid 45px transparent;
+    border-right: solid 45px #ffcd78;
+    border-top: solid 45px #ffcd78;
+  }
+  .right-jaw {
+    border-bottom: solid 45px transparent;
+    border-left: solid 45px #fee0af;
+    border-right: solid 45px transparent;
+    border-top: solid 45px #fee0af;
+  }
+  .nose-text {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 601px) {
   .banner {
     padding: 100px 0;
   }
@@ -221,10 +253,12 @@ span {
   }
   .nose {
     right: 42%;
-    bottom: 38%;
+    bottom: 39%;
+    width: 10%;
+    height: 7%;
   }
   .nose-text {
-    right: 38.5%;
+    right: 37.5%;
     bottom: 39%;
     font-size: 14px;
   }
