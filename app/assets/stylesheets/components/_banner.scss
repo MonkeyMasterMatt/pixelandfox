@@ -7,18 +7,32 @@
 // background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 // text-align: center;
 }
-#banner-title {
+.banner-text-all-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  #banner-title {
   color: white;
   font-size: 80px;
   margin: 0;
   margin-top: -35px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-#banner-title_sub {
+  }
+  #about {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  }
+  #banner-title_sub {
   color: white;
   font-size: 24px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  margin-bottom: 0;
+  }
 }
+
 #banner-title-box {
 
 }
