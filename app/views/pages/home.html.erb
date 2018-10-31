@@ -1,4 +1,14 @@
 <div class="wrapper-black banner" style="background-image: url('<%= image_path'green.jpg' %>'), linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));">
+  <div class="bars">
+    <div class="dropdown">
+      <%= image_tag "bars.png", class: "bars_img dropdown-toggle", id: "dropdown-menu", data: { toggle: "dropdown"} %>
+      <u class="dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </u>
+    </div>
+  </div>
   <div id="relative-box">
     <div class="ear-left cube" tabindex="0"></div>
 
@@ -54,8 +64,8 @@
       BOOP!
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -94,6 +104,15 @@
       </div>
     </div>
   </div>
+  <!-- The Modal -->
+  <div id="about-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="font-family: 'Avenir'">pixel+fox</h2>
+      <p style="font-family: 'Avenir'">This is a test</p>
+    </div>
+  </div>
 
     <div class="right-cheek cube"></div>
 
@@ -110,30 +129,70 @@
       <p id="banner-title_sub" style="font-family: 'Avenir'">The no bullshit agency</p>
     </div>
     <div id="about" style="font-family: 'Avenir'">
-      <p>About</p>
+      <%= mail_to "matt@pixelandfox.com", "Email Me" %>
+      <a class="footer-link">Privacy Policy</a>
+      <a class="footer-link about-link">About</a>
+      <a href="https://twitter.com/pixelnfox?lang=de" class="footer-link">Twitter</a>
+      <a href="https://www.instagram.com/pixelandfox/" class="footer-link">Instagram</a>
     </div>
   </div>
 </div>
 
+<div class="container">
 
-<div class="ear-left_text_mobile">
-  <h4 class="services_heading", style="font-family: 'Avenir'">Product Design</h4>
-  <br>
-  <strong>We</strong> <span class="text-before-strike">are digital creatives who </span> <strong>create </strong><span class="text-before-strike"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="text-before-strike"> in today's industry 4.0.</span>
-  <div class="strike">
-    <span class="services_headline", style="font-family: 'Avenir'">Our Background</span>
+  <div class="ear-left_text_mobile">
+    <h4 class="services_heading", style="font-family: 'Avenir'">Product Design</h4>
+    <br>
+    <strong>We</strong> <span class="text-before-strike">are digital creatives who </span> <strong>create </strong><span class="text-before-strike"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="text-before-strike"> in today's industry 4.0.</span>
+    <div class="strike">
+      <span class="services_headline", style="font-family: 'Avenir'">Our Background</span>
+    </div>
+    <div class="row">
+      <div class="logo1 col-xs-12">
+         <%= image_tag "rocket_internet.png", height: 20 %>
+      </div>
+      <div class="logo2 col-xs-12">
+         <%= image_tag "zalando.svg", height: 20 %>
+      </div>
+      <div class="logo3 col-xs-12">
+         <%= image_tag "hering_schuppener.png", height: 40 %>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="logo1 col-xs-6">
-       <%= image_tag "rocket_internet.png", height: 20 %>
+
+  <div class="ear-right_text_mobile">
+    <h4 class="services_heading", style="font-family: 'Avenir'">Media Relations</h4>
+    <br>
+    <strong>We</strong> <span class="text-before-strike">are digital creatives who </span> <strong>create </strong><span class="text-before-strike"> disruptive and </span> <strong>beautiful designs that reflect who you are </strong><span class="text-before-strike"> in today's industry 4.0.</span>
+    <div class="strike">
+      <span class="services_headline", style="font-family: 'Avenir'">Our Background</span>
     </div>
-    <div class="logo2 col-xs-6">
-       <%= image_tag "zalando.svg", height: 20 %>
-    </div>
-    <div class="logo3 col-xs-6">
-       <%= image_tag "hering_schuppener.png", height: 40 %>
+    <div class="row">
+      <div class="logo1 col-xs-12">
+         <%= image_tag "rocket_internet.png", height: 20 %>
+      </div>
+      <div class="logo2 col-xs-12">
+         <%= image_tag "zalando.svg", height: 20 %>
+      </div>
+      <div class="logo3 col-xs-12">
+         <%= image_tag "hering_schuppener.png", height: 40 %>
+      </div>
     </div>
   </div>
+
+  <div id="user-email">
+    <%= simple_form_for @user do |f| %>
+      <%= f.input :email, label: false,
+      class: "email-input",
+        required: true,
+        placeholder: "Enter your email address..."
+        %>
+      <%= f.submit "Save",
+      class: "submit-btn"
+        %>
+    <% end %>
+  </div>
+
 </div>
 
 <!--

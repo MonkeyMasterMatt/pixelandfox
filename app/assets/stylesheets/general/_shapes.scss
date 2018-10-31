@@ -2,6 +2,43 @@ span {
   color: #484848;
 }
 
+/* Dropdown menu */
+.bars {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.bars_img {
+  height: 50px;
+  width: 50px;
+}
+.dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+.dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #999999 !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
+
+
 .pixel-box {
   height: 400px;
 }
@@ -172,6 +209,21 @@ span {
   margin-top: 20px;
 }
 
+.form-group {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.06), 0 3px 8px 1px rgba(0, 0, 0, 0.16);
+
+    .form-control {
+      border-radius: 4px;
+    }
+}
+.container {
+  text-align: center;
+}
+.submit-btn {
+  font-family: 'Avenir';
+}
+
 // Media responsiveness
 
 @media only screen and (max-width: 600px) {
@@ -190,9 +242,7 @@ span {
       display: none;
     }
   }
-
   #banner-title-box {
-
     #banner-title {
       margin: 0 15px 0 15px;
       font-size: 64px;
@@ -230,9 +280,44 @@ span {
   .nose-text {
     display: none;
   }
+  .ear-left_text_mobile,
+  .ear-right_text_mobile {
+    text-align: center;
+  }
+  .services_heading {
+    font-size: 40px;
+  }
+  .services_headline {
+    font-size: 24px;
+  }
+  .logo1,
+  .logo2,
+  .logo3 {
+    margin: 24px;
+  }
+  .form-group {
+    margin: 200px 0 50px 0;
+
+    .form-control {
+      padding: 32px;
+    }
+  }
+  .submit-btn {
+    width: 80%;
+    padding: 16px;
+    background: white;
+    border: none;
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 601px) {
+  .container {
+    display: none;
+  }
+  .bars {
+    display: none;
+  }
   .banner {
     padding: 100px 0;
   }
@@ -297,5 +382,10 @@ span {
     border-top: solid 75px #fee0af;
     bottom: 20%;
     right: 10%;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .bars {
+    display: none;
   }
 }
