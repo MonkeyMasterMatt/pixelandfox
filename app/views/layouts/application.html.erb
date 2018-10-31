@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>pixel+fox | the no bullshit agency</title>
+    <link rel="icon" href=<%= image_path "logo_pixelandfox.png" %>>
+    <meta name="description" content="pixel+fox is a digital expert in communications, product development and design. Our mission is to help people and companies succeed in the digital age.">
+    <meta property="og:title" content="pixel+fox - the no bullshit agency">
+<!--     <meta property="og:image" content="facebook-card.jpg"> -->
+    <meta property="og:description" content="pixel + fox is a digital expert in communications, product development and design. Our mission is to help people and companies succeed in the digital age.">
+    <meta property="og:site_name" content="pixel+fox"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Lewagonparis">
+    <meta name="twitter:title" content="pixel+fox - the no bullshit agency">
+    <meta name="twitter:description" content="pixel + fox is a digital expert in communications, product development and design. Our mission is to help people and companies succeed in the digital age.">
+    <meta name="twitter:creator" content="@pixelandfox">
+<!--     <meta name="twitter:image:src" content="http://twitter-card.jpg"> -->
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
     <meta name="google-site-verification" content="ab7t2snKzi-1Ow-OvU2blL9Bg9E0EaJ6aykYRBrF7sE" />
+
   </head>
   <body>
-    <%= render 'components/navbar' %>
+  <!-- <body scroll="no" style="overflow: hidden"> -->
     <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
